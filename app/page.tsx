@@ -598,7 +598,7 @@ export default function Portfolio() {
             </motion.p>
 
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+              className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto"
               variants={staggerContainer}
               initial="initial"
               whileInView="animate"
@@ -623,7 +623,7 @@ export default function Portfolio() {
                   <CardContent className="p-6">
                     <MapPin className="h-8 w-8 text-primary mx-auto mb-3" aria-hidden="true" />
                     <h3 className="font-semibold mb-2">Location</h3>
-                    <p className="text-sm text-muted-foreground">Utrecht, The Netherlands</p>
+                    <p className="text-sm text-muted-foreground">Utrecht, The Netherlands | Warsaw, Poland</p>
                   </CardContent>
                 </Card>
               </motion.div>
