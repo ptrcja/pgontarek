@@ -29,7 +29,7 @@ Here you’ll find:
 ## Project Structure
 
 ```
-patiqa/
+/
 ├── app/
 ├── components/
 │   └── ui/
@@ -61,10 +61,7 @@ patiqa/
 
 **Requirements:** Node.js 18+, npm or yarn
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/ptrcja/patiqa.git
-   cd patiqa
+
    ```
 2. Install dependencies:
    ```bash

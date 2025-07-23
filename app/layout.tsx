@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://ptrcja.github.io/patiqa',
+        url: 'https://ptrcja.github.io/pgontarek/',
         title: 'Patrycja Zofia Gontarek - QA Engineer Portfolio',
         description: 'ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.',
         siteName: 'Patrycja QA Portfolio'
