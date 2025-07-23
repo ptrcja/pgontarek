@@ -7,8 +7,8 @@ const nextConfig = {
     images: {
         unoptimized: true
     },
-    basePath: process.env.NODE_ENV === 'production' ? '/patiqa' : '',
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/patiqa/' : '',
+    basePath: process.env.NODE_ENV === 'production' ? '/pgontarek' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/pgontarek/' : '',
 }
 
 module.exports = nextConfig 
