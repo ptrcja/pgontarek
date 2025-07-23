@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 100%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 3.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 224.3 76.3% 48%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
+
+    /* FORCE LIGHT THEME - Override all dark theme styles */
+    html.dark,
+    html[data-theme="dark"],
+    [data-theme="dark"],
+    .dark {
+        --background: 0 0% 100% !important;
+        --foreground: 0 0% 3.9% !important;
+        --card: 0 0% 100% !important;
+        --card-foreground: 0 0% 3.9% !important;
+        --popover: 0 0% 100% !important;
+        --popover-foreground: 0 0% 3.9% !important;
+        --primary: 0 0% 9% !important;
+        --primary-foreground: 0 0% 98% !important;
+        --secondary: 0 0% 96.1% !important;
+        --secondary-foreground: 0 0% 9% !important;
+        --muted: 0 0% 96.1% !important;
+        --muted-foreground: 0 0% 45.1% !important;
+        --accent: 0 0% 96.1% !important;
+        --accent-foreground: 0 0% 9% !important;
+        --destructive: 0 84.2% 60.2% !important;
+        --destructive-foreground: 0 0% 98% !important;
+        --border: 0 0% 89.8% !important;
+        --input: 0 0% 100% !important;
+        --ring: 0 0% 3.9% !important;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground font-sans;
+        font-feature-settings: "rlig" 1, "calt" 1;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* More visible headers using Source Serif 4 with Regular 400 weight */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif text-balance font-normal;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 1.1;
+        @apply tracking-tight;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.15;
+        @apply tracking-tight;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.2;
+        @apply tracking-tight;
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 1.25;
+        @apply tracking-tight;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.3;
+        @apply tracking-tight;
+    }
+
+    h6 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.35;
+        @apply tracking-tight;
+    }
+
+    /* Enhanced body text with Inter */
+    p {
+        @apply text-base leading-relaxed;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    }
+
+    /* Beautiful large text for intros/leads */
+    .text-lead {
+        @apply text-lg md:text-xl lg:text-2xl leading-relaxed font-light;
+    }
+
+    /* Elegant small text */
+    .text-small {
+        @apply text-sm leading-relaxed;
+    }
+
+    /* Display text for hero sections */
+    .text-display {
+        @apply font-serif tracking-tighter;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 0.95;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "dlig" 1;
+    }
+
+    /* Subheading style */
+    .text-subheading {
+        @apply font-serif tracking-wide opacity-75;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+    }
+
+    /* Quote styling */
+    blockquote {
+        @apply font-serif leading-relaxed border-l-4 border-primary/20 pl-6 my-6;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    /* Code styling */
+    code {
+        @apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded;
+    }
+
+    pre code {
+        @apply bg-transparent p-0;
+    }
+}
+
+@layer components {
+
+    /* Utility classes for beautiful typography */
+    .font-display {
+        @apply font-serif tracking-tighter;
+        font-weight: 400;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "dlig" 1;
+    }
+
+    .font-heading {
+        @apply font-serif tracking-tight;
+        font-weight: 400;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+    }
+
+    .font-body {
+        @apply font-sans;
+        font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent;
+    }
+
+    /* COMPREHENSIVE LIGHT THEME OVERRIDES */
+    /* Force light theme for dropdowns and popovers */
+    [data-radix-popper-content-wrapper] {
+        --popover: 0 0% 100% !important;
+        --popover-foreground: 0 0% 3.9% !important;
+    }
+
+    /* Force light backgrounds for all dropdown menus */
+    [role="menu"],
+    [data-state="open"][role="menu"],
+    .DropdownMenuContent,
+    [data-radix-dropdown-menu-content],
+    [data-radix-select-content],
+    [cmdk-root] {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+        border: 1px solid hsl(0 0% 89.8%) !important;
+    }
+
+    /* Force command palette (search) styling */
+    [cmdk-root] {
+        background: white !important;
+        background-color: white !important;
+    }
+
+    [cmdk-input] {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Force light theme for all text in tasks and content */
+    .upcoming-tasks h3,
+    .upcoming-tasks h4,
+    .upcoming-tasks .task-title,
+    .upcoming-tasks p {
+        color: #1a1a1a !important;
+    }
+
+    /* Force ALL input elements to have white backgrounds */
+    input,
+    .Input,
+    [role="searchbox"],
+    input[type="search"],
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select,
+    .bg-background,
+    [data-radix-popper-content-wrapper] input {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Force ALL dropdown and popover content to be light */
+    [data-radix-dropdown-menu-content],
+    [data-radix-select-content],
+    [data-radix-popover-content],
+    [data-radix-popper-content-wrapper],
+    [data-radix-popper-content-wrapper]>div,
+    [data-state="open"],
+    [data-side],
+    [role="dialog"],
+    [role="menu"],
+    [role="listbox"] {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+        border: 1px solid hsl(0 0% 89.8%) !important;
+    }
+
+    /* Specific overrides for shadcn components */
+    .bg-popover {
+        background: white !important;
+        background-color: white !important;
+    }
+
+    .text-popover-foreground {
+        color: #1a1a1a !important;
+    }
+
+    /* Force all card components to be light */
+    .bg-card {
+        background: white !important;
+        background-color: white !important;
+    }
+
+    .text-card-foreground {
+        color: #1a1a1a !important;
+    }
+
+    /* Force all muted text to be readable */
+    .text-muted-foreground {
+        color: #5a5a5a !important;
+    }
+
+    /* Override any potential dark theme classes */
+    html.dark *,
+    [data-theme="dark"] *,
+    .dark * {
+        background-color: inherit !important;
+        color: inherit !important;
+    }
+
+    /* Force body and html to always be light */
+    html,
+    body {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+
+    /* Remove any dark mode class effects */
+    html.dark,
+    html[data-theme="dark"],
+    [data-theme="dark"],
+    .dark {
+        background: white !important;
+        background-color: white !important;
+        color: #1a1a1a !important;
+    }
+}
