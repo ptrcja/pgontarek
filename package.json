@@ -1,8 +1,7 @@
 {
     "name": "patrycja-qa-portfolio",
     "version": "0.1.0",
-    "private": true,
-    "homepage": "https://ptrcja.github.io/patiqa",
+    "homepage": "https://ptrcja.github.io/pgontarek",
     "scripts": {
         "dev": "next dev",
         "build": "next build",

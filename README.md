@@ -90,12 +90,6 @@ npm run build
   npm run deploy
   ```
 
-## Performance
-
-- Lighthouse: 100/100 (Perf, Accessibility, Best Practices, SEO)
-- Core Web Vitals: All green
-- Bundle: Optimized static export
-
 ## QA Projects
 
 ### 1. Address Management Automation
@@ -116,7 +110,6 @@ npm run build
 ## Contact
 
 - **Email:** patgontarek17@gmail.com
-- **Phone:** +31 0687146217
 - **Location:** Utrecht, NL | Warsaw PL
 - **GitHub:** [ptrcja](https://github.com/ptrcja)
 - **LinkedIn:** [patrycja-gontarek-21b570293](https://www.linkedin.com/in/patrycja-gontarek-21b570293/)

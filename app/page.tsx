@@ -110,10 +110,6 @@ export default function Portfolio() {
                 <span>Utrecht, The Netherlands | Warsaw, Poland</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                <a href="tel:+310687146217" className="hover:text-primary transition-colors">+31 0687146217</a>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 <a href="mailto:patgontarek17@gmail.com" className="hover:text-primary transition-colors">patgontarek17@gmail.com</a>
               </div>
@@ -622,22 +618,6 @@ export default function Portfolio() {
                   </CardContent>
                 </Card>
               </motion.div>
-
-              <motion.div variants={fadeInUp}>
-                <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-                  <CardContent className="p-6">
-                    <Phone className="h-8 w-8 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <h3 className="font-semibold mb-2">Phone</h3>
-                    <a
-                      href="tel:+310687146217"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +31 0687146217
-                    </a>
-                  </CardContent>
-                </Card>
-              </motion.div>
-
               <motion.div variants={fadeInUp}>
                 <Card className="text-center hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
