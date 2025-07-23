@@ -107,7 +107,7 @@ export default function Portfolio() {
             >
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" aria-hidden="true" />
-                <span>Utrecht, The Netherlands</span>
+                <span>Utrecht, The Netherlands | Warsaw, Poland</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" aria-hidden="true" />
