@@ -117,7 +117,7 @@ npm run build
 
 - **Email:** patgontarek17@gmail.com
 - **Phone:** +31 0687146217
-- **Location:** Utrecht, NL
+- **Location:** Utrecht, NL | Warsaw PL
 - **GitHub:** [ptrcja](https://github.com/ptrcja)
 - **LinkedIn:** [patrycja-gontarek-21b570293](https://www.linkedin.com/in/patrycja-gontarek-21b570293/)
 
