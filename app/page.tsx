@@ -316,7 +316,7 @@ export default function Portfolio() {
           </motion.h2>
 
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto"
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -426,6 +426,76 @@ export default function Portfolio() {
                 </CardContent>
               </Card>
             </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    <CardTitle className="text-xl">PostgreSQL HR Analytics Migration</CardTitle>
+                  </div>
+                  <CardDescription>
+                    Production-ready migration script with JSONB, arrays, and vector capabilities for modern HR systems
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                    <li>• JSONB storage for AI configurations and structured data</li>
+                    <li>• Native arrays for tags and vector embeddings</li>
+                    <li>• Advanced GIN indexing for JSON and array queries</li>
+                    <li>• Row Level Security for multi-tenant isolation</li>
+                    <li>• Comprehensive validation and testing functions</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PostgreSQL</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">JSONB</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PLpgSQL</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Docker</span>
+                  </div>
+                  <Button size="sm" asChild className="w-full">
+                    <a href="https://github.com/ptrcja/psql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
+                      View Project
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    <CardTitle className="text-xl">SQL Server HR Analytics Migration</CardTitle>
+                  </div>
+                  <CardDescription>
+                    Enterprise-grade migration script for SQL Server with AI integration and comprehensive employee lifecycle management
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                    <li>• Multi-tenant user management with organization isolation</li>
+                    <li>• Role-based access control with granular permissions</li>
+                    <li>• AI agent system for workforce planning and analytics</li>
+                    <li>• Performance management with reviews and metrics</li>
+                    <li>• Comprehensive audit logging and data quality tracking</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">SQL Server</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">T-SQL</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Enterprise</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">HR Analytics</span>
+                  </div>
+                  <Button size="sm" asChild className="w-full">
+                    <a href="https://github.com/ptrcja/tsql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
+                      View Project
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -487,7 +557,9 @@ export default function Portfolio() {
                       <li>Postman</li>
                       <li>Chrome DevTools</li>
                       <li>Git</li>
-                      <li>SQL</li>
+                      <li>PostgreSQL (PSQL)</li>
+                      <li>SQL Server (T-SQL)</li>
+                      <li>Database Migration Scripts</li>
                     </ul>
                   </CardContent>
                 </Card>
