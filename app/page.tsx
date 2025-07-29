@@ -242,7 +242,7 @@ export default function Portfolio() {
                       <CardDescription className="text-lg font-medium">Testlio | Remote</CardDescription>
                     </div>
                     <div className="text-sm text-muted-foreground mt-2 md:mt-0">
-                      June 2025 - Present
+                      February 2025 - Present
                     </div>
                   </div>
                 </CardHeader>
@@ -323,7 +323,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
             <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <TestTube className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
@@ -333,7 +333,7 @@ export default function Portfolio() {
                     E-commerce address lifecycle automation preventing delivery failures and improving customer trust
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li>• Complete address management workflow automation</li>
                     <li>• Prevents failed deliveries and shipping problems</li>
@@ -347,7 +347,7 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Cucumber BDD</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
                   </div>
-                  <Button size="sm" asChild className="w-full">
+                  <Button size="sm" asChild className="w-full mt-auto">
                     <a href="https://github.com/ptrcja/1.-Workshop-task-SeleniumWebdriver-Cucumber" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
@@ -358,7 +358,7 @@ export default function Portfolio() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
@@ -368,7 +368,7 @@ export default function Portfolio() {
                     Advanced automation framework for comprehensive e-commerce testing workflows
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li>• Complete e-commerce workflow automation</li>
                     <li>• Advanced Page Object Model implementation</li>
@@ -382,7 +382,7 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TestNG</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
                   </div>
-                  <Button size="sm" asChild className="w-full">
+                  <Button size="sm" asChild className="w-full mt-auto">
                     <a href="https://github.com/ptrcja/2.-WorkshopTask" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
@@ -393,7 +393,7 @@ export default function Portfolio() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <Bug className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
@@ -403,7 +403,7 @@ export default function Portfolio() {
                     Professional manual testing showcase with live documentation and comprehensive bug reporting
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li>• 5 comprehensive test cases with 80% pass rate</li>
                     <li>• Live documentation with interactive test results</li>
@@ -417,7 +417,7 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Chrome DevTools</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Bug Reporting</span>
                   </div>
-                  <Button size="sm" asChild className="w-full">
+                  <Button size="sm" asChild className="w-full mt-auto">
                     <a href="https://ptrcja.github.io/Trello-Testing-Project/" target="_blank" rel="noopener noreferrer">
                       <Globe className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Live Project
@@ -428,7 +428,7 @@ export default function Portfolio() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
@@ -438,11 +438,10 @@ export default function Portfolio() {
                     Production-ready migration script with JSONB, arrays, and vector capabilities for modern HR systems
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                     <li>• JSONB storage for AI configurations and structured data</li>
                     <li>• Native arrays for tags and vector embeddings</li>
-                    <li>• Advanced GIN indexing for JSON and array queries</li>
                     <li>• Row Level Security for multi-tenant isolation</li>
                     <li>• Comprehensive validation and testing functions</li>
                   </ul>
@@ -452,7 +451,7 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PLpgSQL</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Docker</span>
                   </div>
-                  <Button size="sm" asChild className="w-full">
+                  <Button size="sm" asChild className="w-full mt-auto">
                     <a href="https://github.com/ptrcja/psql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
@@ -463,23 +462,23 @@ export default function Portfolio() {
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
                     <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
                     <CardTitle className="text-xl">SQL Server HR Analytics Migration</CardTitle>
                   </div>
                   <CardDescription>
-                    Enterprise-grade migration script for SQL Server with AI integration and comprehensive employee lifecycle management
+                    Migration script for SQL Server with AI integration and comprehensive employee lifecycle management
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• Multi-tenant user management with organization isolation</li>
-                    <li>• Role-based access control with granular permissions</li>
-                    <li>• AI agent system for workforce planning and analytics</li>
-                    <li>• Performance management with reviews and metrics</li>
-                    <li>• Comprehensive audit logging and data quality tracking</li>
+                    <li>• Automated database recreation with optimal SQL Server settings</li>
+                    <li>• Migration tracking infrastructure with success/failure logging</li>
+                    <li>• Complete schema deployment of 25+ tables with proper dependencies</li>
+                    <li>• Built-in validation procedures and sample data for testing</li>
+                    <li>• Error handling with rollback mechanisms and detailed reporting</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">SQL Server</span>
@@ -487,7 +486,7 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Enterprise</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">HR Analytics</span>
                   </div>
-                  <Button size="sm" asChild className="w-full">
+                  <Button size="sm" asChild className="w-full mt-auto">
                     <a href="https://github.com/ptrcja/tsql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
@@ -522,12 +521,12 @@ export default function Portfolio() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <motion.div variants={fadeInUp}>
-                <Card>
+                <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <TestTube className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
                     <CardTitle className="text-lg">Testing Methods</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
                       <li>Manual Testing</li>
                       <li>Black-box Testing</li>
@@ -543,12 +542,12 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div variants={fadeInUp}>
-                <Card>
+                <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <Code className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
                     <CardTitle className="text-lg">Tools & Technologies</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
                       <li>Selenium WebDriver</li>
                       <li>Java</li>
@@ -566,12 +565,12 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div variants={fadeInUp}>
-                <Card>
+                <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <FileCheck className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
                     <CardTitle className="text-lg">Methodologies</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
                       <li>Agile/Scrum</li>
                       <li>SDLC</li>
@@ -587,12 +586,12 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div variants={fadeInUp}>
-                <Card>
+                <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <Globe className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
                     <CardTitle className="text-lg">Languages & Other</CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
                       <li>English (Business)</li>
                       <li>Polish (Native)</li>
