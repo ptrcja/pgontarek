@@ -379,7 +379,7 @@ export default function Portfolio() {
                   <div className="flex flex-wrap gap-2 mb-4">
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Selenium WebDriver</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Java</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TestNG</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Gherkin</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
                   </div>
                   <Button size="sm" asChild className="w-full mt-auto">
