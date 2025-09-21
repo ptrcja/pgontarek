@@ -85,7 +85,7 @@ export default function Portfolio() {
                 Patrycja Zofia Gontarek
               </h1>
               <p className="text-subheading text-2xl md:text-3xl text-muted-foreground">
-                Junior QA Engineer
+              Quality Assurance Engineer
               </p>
             </motion.div>
 
@@ -95,8 +95,7 @@ export default function Portfolio() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.
-              Specialized in quality assurance, test automation, and ensuring exceptional software reliability.
+             
             </motion.p>
 
             <motion.div
@@ -106,34 +105,15 @@ export default function Portfolio() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4" aria-hidden="true" />
-                <span>Utrecht, The Netherlands | Warsaw, Poland</span>
+          
+              
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4" aria-hidden="true" />
-                <a href="mailto:patgontarek17@gmail.com" className="hover:text-primary transition-colors">patgontarek17@gmail.com</a>
+              
+          
               </div>
             </motion.div>
 
-            <motion.div
-              className="flex gap-6 justify-center mt-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              <Button size="lg" asChild className="px-8 py-4">
-                <a href="https://github.com/ptrcja" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
-                  <Github className="h-5 w-5 mr-3" aria-hidden="true" />
-                  GitHub
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" asChild className="px-8 py-4 border-2">
-                <a href="https://www.linkedin.com/in/patrycja-gontarek-21b570293/" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn profile">
-                  <Linkedin className="h-5 w-5 mr-3" aria-hidden="true" />
-                  LinkedIn
-                </a>
-              </Button>
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -167,14 +147,13 @@ export default function Portfolio() {
               transition={{ delay: 0.2 }}
             >
               <p className="text-lg leading-relaxed mb-6">
-                ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.
-                Detail-oriented professional with 5+ years of customer experience in e-commerce with strong analytical
-                mindset and passion for quality assurance.
+              Hi, I’m Patrycja, an ISTQB-certified QA Engineer who loves turning small testing details into big wins for users.
+              My background in e-commerce and operations shaped my customer-first mindset, which now helps me spot issues and create smooth solutions. 
+               
               </p>
               <p className="text-lg leading-relaxed">
-                Demonstrated ability to analyze complex customer issues and document clear, actionable solutions.
-                Committed to delivering high-quality software through comprehensive testing methodologies and
-                continuous improvement practices.
+              This portfolio is a space where I share my projects, learning progress, and the skills I’m building along the way.
+              Right now, I’m diving into test automation with Playwright and TypeScript, and enjoying every step of the journey! 
               </p>
             </motion.div>
 
@@ -197,16 +176,16 @@ export default function Portfolio() {
                 <div className="bg-lavender-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Code className="h-8 w-8 text-primary" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Automation Expert</h3>
-                <p className="text-muted-foreground">Selenium WebDriver, Java, and Cucumber BDD for comprehensive test automation</p>
+                <h3 className="text-xl font-semibold mb-2">Automation in Progress</h3>
+                <p className="text-muted-foreground">Currently learning Playwright with TypeScript and expanding my automation skills to make testing faster and smarter</p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="text-center">
                 <div className="bg-lavender-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-primary" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">5+ Years Experience</h3>
-                <p className="text-muted-foreground">Customer-focused experience in e-commerce with analytical problem-solving</p>
+                <h3 className="text-xl font-semibold mb-2">Customer-Focused Experience</h3>
+                <p className="text-muted-foreground">5+ years in e-commerce and operations taught me how to think like a user and solve problems with impact</p>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -250,11 +229,15 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Certified regression tester participating in paid crowdtesting projects for real-world applications</span>
+                      <span>Performed manual regression and exploratory testing for mobile and web applications, with a strong focus on mobile payment features (iOS/Android)</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Execute manual testing scenarios and provide detailed bug reports for client products</span>
+                      <span>Documented discovered defects in Testlio, providing clear reproduction steps for external client project teams products</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Supported distributed QA cycles, increasing regression coverage and improving the overall quality of delivered applications</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -278,19 +261,19 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Processed 1,000+ B2B orders efficiently maintaining accuracy standards across complex workflow systems</span>
+                      <span>Led UAT for Picqer WMS migration, executing 15+ scenarios and reporting 20+ critical bugs, directly preventing go-live failures </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Investigated inventory discrepancies using systematic analysis ensuring accurate stock levels in SAP system</span>
+                      <span>Drove a 99.7% order accuracy rate, resulting in significant cost savings and enhanced customer satisfaction across 1,000+ monthly B2B orders </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Optimized packing workflows by 20% through process analysis and cross-team collaboration</span>
+                      <span>Created end-to-end process documentation, cutting new-hire onboarding time by 30%</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Created detailed documentation for Picqer system implementation supporting team training initiatives</span>
+                      <span>Implemented weekly SKU-level error analysis, reducing product complaints by 30% and lowering return-related costs while boosting trust</span>
                     </li>
                   </ul>
                 </CardContent>

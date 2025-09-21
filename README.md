@@ -96,7 +96,7 @@ npm run build
 
 ### 2. E-commerce Test Suite
 - [GitHub](https://github.com/ptrcja/2.-WorkshopTask)
-- Selenium, Java, TestNG, Maven
+- Selenium, Java, Gerkin, Maven
 - Advanced framework, cross-browser, full purchase flow
 
 ### 3. Trello Web QA Testing
