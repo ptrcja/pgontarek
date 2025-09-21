@@ -330,12 +330,12 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Cucumber BDD</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
                   </div>
-                  <Button size="sm" asChild className="w-full mt-auto">
-                    <a href="https://github.com/ptrcja/1.-Workshop-task-SeleniumWebdriver-Cucumber" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/ptrcja/1.-Workshop-task-SeleniumWebdriver-Cucumber" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -365,12 +365,12 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Gherkin</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
                   </div>
-                  <Button size="sm" asChild className="w-full mt-auto">
-                    <a href="https://github.com/ptrcja/2.-WorkshopTask" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/ptrcja/2.-WorkshopTask" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -400,12 +400,12 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Chrome DevTools</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Bug Reporting</span>
                   </div>
-                  <Button size="sm" asChild className="w-full mt-auto">
-                    <a href="https://ptrcja.github.io/Trello-Testing-Project/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ptrcja.github.io/Trello-Testing-Project/" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
                       <Globe className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Live Project
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -434,12 +434,12 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PLpgSQL</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Docker</span>
                   </div>
-                  <Button size="sm" asChild className="w-full mt-auto">
-                    <a href="https://github.com/ptrcja/psql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/ptrcja/psql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -469,12 +469,12 @@ export default function Portfolio() {
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Enterprise</span>
                     <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">HR Analytics</span>
                   </div>
-                  <Button size="sm" asChild className="w-full mt-auto">
-                    <a href="https://github.com/ptrcja/tsql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/ptrcja/tsql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
-                    </a>
-                  </Button>
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
@@ -507,18 +507,14 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <TestTube className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Testing Methods</CardTitle>
+                    <CardTitle className="text-lg">Testing Skills</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Manual Testing</li>
-                      <li>Black-box Testing</li>
-                      <li>White-box Testing</li>
-                      <li>Test Automation</li>
-                      <li>Functional Testing</li>
-                      <li>Regression Testing</li>
-                      <li>API Testing</li>
-                      <li>Exploratory Testing</li>
+                      <li>Manual (functional, regression, exploratory)</li>
+                      <li>UAT & Mobile (iOS/Android)</li>
+                      <li>API Testing, Security (XSS)</li>
+                      <li>Test Case Design</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -528,20 +524,14 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <Code className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Tools & Technologies</CardTitle>
+                    <CardTitle className="text-lg">Automation & Frameworks</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Selenium WebDriver</li>
-                      <li>Java</li>
-                      <li>Cucumber BDD</li>
-                      <li>JIRA</li>
-                      <li>Postman</li>
-                      <li>Chrome DevTools</li>
-                      <li>Git</li>
-                      <li>PostgreSQL (PSQL)</li>
-                      <li>SQL Server (T-SQL)</li>
-                      <li>Database Migration Scripts</li>
+                      <li>Java, Selenium WebDriver</li>
+                      <li>TypeScript, Playwright  </li>
+                      <li>Cucumber BDD, Git / GitHub</li>
+                      <li></li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -551,18 +541,13 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <FileCheck className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Methodologies</CardTitle>
+                    <CardTitle className="text-lg">Tools & Data</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Agile/Scrum</li>
-                      <li>SDLC</li>
-                      <li>STLC</li>
-                      <li>Page Object Model (POM)</li>
-                      <li>BDD</li>
-                      <li>Test Case Design</li>
-                      <li>Bug Reporting</li>
-                      <li>Documentation</li>
+                      <li>JIRA, TestLink, Postman</li>
+                      <li>Chrome DevTools, GitHub Actions</li>
+                      <li>MySQL, PostgreSQL, Azure Data Studio</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -576,13 +561,8 @@ export default function Portfolio() {
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>English (Business)</li>
-                      <li>Polish (Native)</li>
-                      <li>TCP/IP protocols</li>
-                      <li>HTTP/HTTPS</li>
-                      <li>CRM Systems</li>
-                      <li>SAP System</li>
-                      <li>E-commerce Platforms</li>
+                      <li>English (Business), Polish (Native)</li>
+                      <li>E-commerce & CRM Systems</li>
                       <li>Cross-team Collaboration</li>
                     </ul>
                   </CardContent>
@@ -608,7 +588,7 @@ export default function Portfolio() {
                       <p className="text-muted-foreground text-sm">May 2025</p>
                     </div>
                     <div className="bg-white rounded-lg p-4">
-                      <h4 className="font-semibold text-lg mb-2">Manual and Automation QA Testing Bootcamp</h4>
+                      <h4 className="font-semibold text-lg mb-2">Manual and Automation QA Testing Bootcamp at Coders Lab</h4>
                       <p className="text-muted-foreground text-sm">Completed January 2025</p>
                     </div>
                   </div>
@@ -677,7 +657,7 @@ export default function Portfolio() {
                   <CardContent className="p-6">
                     <MapPin className="h-8 w-8 text-primary mx-auto mb-3" aria-hidden="true" />
                     <h3 className="font-semibold mb-2">Location</h3>
-                    <p className="text-sm text-muted-foreground">Utrecht, The Netherlands | Warsaw, Poland</p>
+                    <p className="text-sm text-muted-foreground">Utrecht, Netherlands | Warsaw, Poland</p>
                   </CardContent>
                 </Card>
               </motion.div>
