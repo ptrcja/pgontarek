@@ -16,7 +16,8 @@ import {
   TestTube,
   Users,
   FileCheck,
-  Globe
+  Globe,
+  Coffee
 } from 'lucide-react'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -309,28 +310,28 @@ export default function Portfolio() {
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <TestTube className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    <CardTitle className="text-xl">Address Management Test Automation</CardTitle>
+                    <Coffee className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    <CardTitle className="text-xl">Coffee E-commerce Flaky Test Detector</CardTitle>
                   </div>
                   <CardDescription>
-                    E-commerce address lifecycle automation preventing delivery failures and improving customer trust
+                    Statistical flaky test detection tool built for Coffee Store e-commerce platform, running Playwright tests repeatedly to generate comprehensive reports with confidence scores
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• Complete address management workflow automation</li>
-                    <li>• Prevents failed deliveries and shipping problems</li>
-                    <li>• BDD scenarios written in plain English</li>
-                    <li>• Page Object Model architecture</li>
-                    <li>• Address creation, verification, and deletion testing</li>
+                    <li>• Runs tests N times (10-100+) to detect intermittent failures</li>
+                    <li>• Statistical analysis with failure rates and confidence scoring</li>
+                    <li>• Interactive HTML reports with health metrics dashboard</li>
+                    <li>• CTRF integration for standardized test result parsing</li>
+                    <li>• Educational examples: stable vs flaky patterns</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Selenium WebDriver</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Java</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Cucumber BDD</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Maven</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Playwright</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TypeScript</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Node.js</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">CTRF</span>
                   </div>
-                  <a href="https://github.com/ptrcja/1.-Workshop-task-SeleniumWebdriver-Cucumber" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                  <a href="https://github.com/ptrcja/flaky-test-project-playwright" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
                     <Button size="sm" className="w-full">
                       <Github className="h-4 w-4 mr-2" aria-hidden="true" />
                       View Project
@@ -410,74 +411,6 @@ export default function Portfolio() {
               </Card>
             </motion.div>
 
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    <CardTitle className="text-xl">PostgreSQL HR Analytics Migration</CardTitle>
-                  </div>
-                  <CardDescription>
-                    Production-ready migration script with JSONB, arrays, and vector capabilities for modern HR systems
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-grow">
-                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• JSONB storage for AI configurations and structured data</li>
-                    <li>• Native arrays for tags and vector embeddings</li>
-                    <li>• Row Level Security for multi-tenant isolation</li>
-                    <li>• Comprehensive validation and testing functions</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PostgreSQL</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">JSONB</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">PLpgSQL</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Docker</span>
-                  </div>
-                  <a href="https://github.com/ptrcja/psql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
-                    <Button size="sm" className="w-full">
-                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
-                      View Project
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Database className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    <CardTitle className="text-xl">SQL Server HR Analytics Migration</CardTitle>
-                  </div>
-                  <CardDescription>
-                    Migration script for SQL Server with AI integration and comprehensive employee lifecycle management
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-grow">
-                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• Automated database recreation with optimal SQL Server settings</li>
-                    <li>• Migration tracking infrastructure with success/failure logging</li>
-                    <li>• Complete schema deployment of 25+ tables with proper dependencies</li>
-                    <li>• Built-in validation procedures and sample data for testing</li>
-                    <li>• Error handling with rollback mechanisms and detailed reporting</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">SQL Server</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">T-SQL</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Enterprise</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">HR Analytics</span>
-                  </div>
-                  <a href="https://github.com/ptrcja/tsql-migration-script-hr-saas" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
-                    <Button size="sm" className="w-full">
-                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
-                      View Project
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -657,7 +590,7 @@ export default function Portfolio() {
                   <CardContent className="p-6">
                     <MapPin className="h-8 w-8 text-primary mx-auto mb-3" aria-hidden="true" />
                     <h3 className="font-semibold mb-2">Location</h3>
-                    <p className="text-sm text-muted-foreground">Utrecht, Netherlands | Warsaw, Poland</p>
+                    <p className="text-sm text-muted-foreground">Utrecht, the Netherlands</p>
                   </CardContent>
                 </Card>
               </motion.div>
