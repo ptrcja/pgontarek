@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://ptrcja.github.io/pgontarek/',
         title: 'Patrycja Zofia Gontarek - QA Engineer Portfolio',
         description: 'ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.',
-        siteName: 'Patrycja QA Portfolio'
+        siteName: 'Show case of my work in Manual and Automation Testing'
     },
     twitter: {
         card: 'summary_large_image',
