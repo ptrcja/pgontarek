@@ -177,8 +177,8 @@ export default function Portfolio() {
                 <div className="bg-lavender-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Code className="h-8 w-8 text-primary" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Automation in Progress</h3>
-                <p className="text-muted-foreground">Currently learning Playwright with TypeScript and expanding my automation skills to make testing faster and smarter</p>
+                <h3 className="text-xl font-semibold mb-2">Automation</h3>
+                <p className="text-muted-foreground">Specializing in Playwright with TypeScript, building automation solutions that make testing faster and smarter</p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="text-center">
@@ -218,6 +218,42 @@ export default function Portfolio() {
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div>
+                      <CardTitle className="text-xl">QA Engineer</CardTitle>
+                      <CardDescription className="text-lg font-medium">Women Coding Community | Remote</CardDescription>
+                    </div>
+                    <div className="text-sm text-muted-foreground mt-2 md:mt-0">
+                      October 2025 - Present
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Developed and maintained automated functional and regression tests for the WCC frontend application using Playwright and TypeScript <a href="https://github.com/Women-Coding-Community/wcc-frontend" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Link</a></span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Designed reusable test cases and contributed to expanding automation coverage across key user journeys</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Identified and reported defects, collaborated with developers on fixes, and improved CI/CD reliability by reducing false test failures by ~30%</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Participated in weekly QA syncs, helping align testing standards and strengthen collaboration within the open-source project</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card className="border-l-4 border-l-secondary">
+                <CardHeader>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div>
                       <CardTitle className="text-xl">Freelance QA Tester</CardTitle>
                       <CardDescription className="text-lg font-medium">Testlio | Remote</CardDescription>
                     </div>
@@ -230,59 +266,26 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Performed manual regression and exploratory testing for mobile and web applications, with a strong focus on mobile payment features (iOS/Android)</span>
+                      <span>Executed manual regression and exploratory testing for mobile payment features on iOS/Android platforms</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Documented discovered defects in Testlio, providing clear reproduction steps for external client project teams products</span>
+                      <span>Reported high-severity defects with a 95%+ acceptance rate due to clear reproduction steps and documentation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Supported distributed QA cycles, increasing regression coverage and improving the overall quality of delivered applications</span>
+                      <span>Contributed to a ~15% increase in regression coverage across client test cycles</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <span>Collaborated closely with test leads to refine test cases and improve overall cycle efficiency</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
             </motion.div>
 
-            <motion.div variants={fadeInUp}>
-              <Card className="border-l-4 border-l-secondary">
-                <CardHeader>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <CardTitle className="text-xl">Operations Systems Specialist</CardTitle>
-                      <CardDescription className="text-lg font-medium">Dutch Value Logistics | Houten, The Netherlands</CardDescription>
-                    </div>
-                    <div className="text-sm text-muted-foreground mt-2 md:mt-0">
-                      July 2022 - January 2025
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Led UAT for Picqer WMS migration, executing 15+ scenarios and reporting 20+ critical bugs, directly preventing go-live failures </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Drove a 99.7% order accuracy rate, resulting in significant cost savings and enhanced customer satisfaction across 1,000+ monthly B2B orders </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Created end-to-end process documentation, cutting new-hire onboarding time by 30%</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Implemented weekly SKU-level error analysis, reducing product complaints by 30% and lowering return-related costs while boosting trust</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
             </motion.div>
-
-
-          </motion.div>
         </div>
       </section>
 
