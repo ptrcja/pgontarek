@@ -230,7 +230,7 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Developed and maintained automated functional and regression tests for the WCC frontend application using Playwright and TypeScript <a href="https://github.com/Women-Coding-Community/wcc-frontend" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Link</a></span>
+                      <span>Developed and maintained automated functional and REST API tests for the WCC application using Playwright and TypeScript <a href="https://github.com/Women-Coding-Community/wcc-frontend" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Link</a></span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
@@ -266,19 +266,19 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Executed manual regression and exploratory testing for mobile payment features on iOS/Android platforms</span>
+                      <span>Executed manual functional, regression, and exploratory testing for web applications across iOS and web browsers</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Reported high-severity defects with a 95%+ acceptance rate due to clear reproduction steps and documentation</span>
+                      <span>Reported defects with detailed reproduction steps, log analysis, and device-specific context</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Contributed to a ~15% increase in regression coverage across client test cycles</span>
+                      <span>Collaborated with test leads to refine test cases and maintain test documentation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Collaborated closely with test leads to refine test cases and improve overall cycle efficiency</span>
+                      <span>Consistently selected for mobile testing cycles requiring cross-platform expertise</span>
                     </li>
                   </ul>
                 </CardContent>
