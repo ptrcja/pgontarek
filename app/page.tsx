@@ -17,7 +17,8 @@ import {
   Users,
   FileCheck,
   Globe,
-  Coffee
+  Coffee,
+  Sparkles
 } from 'lucide-react'
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -230,19 +231,19 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Developed and maintained automated functional and REST API tests for the WCC application using Playwright and TypeScript <a href="https://github.com/Women-Coding-Community/wcc-frontend" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Link</a></span>
+                      <span>Developed and maintained automated functional tests using Playwright and TypeScript for an open-source project <a href="https://github.com/Women-Coding-Community/wcc-frontend" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Link</a></span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Designed reusable test cases and contributed to expanding automation coverage across key user journeys</span>
+                      <span>Refactored test architecture to Component Object pattern following code review - improved structure, reduced repetition, and long-term maintainability</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Identified and reported defects, collaborated with developers on fixes, and improved CI/CD reliability by reducing false test failures by ~30%</span>
+                      <span>Improved CI/CD reliability by reducing false test failures by ~30% through pipeline debugging and test stabilisation</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Participated in weekly QA syncs, helping align testing standards and strengthen collaboration within the open-source project</span>
+                      <span>Contributed to weekly QA syncs, helping shape testing standards across a distributed open-source team</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -254,7 +255,7 @@ export default function Portfolio() {
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div>
-                      <CardTitle className="text-xl">Freelance QA Tester</CardTitle>
+                      <CardTitle className="text-xl">QA Tester</CardTitle>
                       <CardDescription className="text-lg font-medium">Testlio | Remote</CardDescription>
                     </div>
                     <div className="text-sm text-muted-foreground mt-2 md:mt-0">
@@ -266,19 +267,7 @@ export default function Portfolio() {
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Executed manual functional, regression, and exploratory testing for web applications across iOS and web browsers</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Reported defects with detailed reproduction steps, log analysis, and device-specific context</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Collaborated with test leads to refine test cases and maintain test documentation</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                      <span>Consistently selected for mobile testing cycles requiring cross-platform expertise</span>
+                      <span>Participated in crowdsourced test cycles for iOS and web applications, gaining exposure to real-world bug reporting workflows and defect management processes</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -383,31 +372,33 @@ export default function Portfolio() {
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
-                    <Bug className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    <CardTitle className="text-xl">Trello QA Testing Project</CardTitle>
+                    <Sparkles className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    <CardTitle className="text-xl">Chargeback QA Suite</CardTitle>
                   </div>
                   <CardDescription>
-                    Professional manual testing showcase with live documentation and comprehensive bug reporting
+                    AI-assisted QA framework for compliance-critical payment chargeback workflows with auto-triaged failures
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col flex-grow">
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• 5 comprehensive test cases with 80% pass rate</li>
-                    <li>• Live documentation with interactive test results</li>
-                    <li>• 1 medium-severity bug identified and documented</li>
-                    <li>• Authentication, registration, and board management testing</li>
-                    <li>• Security testing including XSS validation</li>
+                    <li>• 13 API tests across 3 browsers running on GitHub Actions</li>
+                    <li>• On failure, n8n webhook triggers Claude AI to analyze the issue</li>
+                    <li>• Auto-creates structured GitHub Issues with root cause and suggested fix</li>
+                    <li>• Mockoon mock server simulating a real payment provider</li>
+                    <li>• Compliance-focused chargeback flow coverage</li>
                   </ul>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Manual Testing</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Security Testing</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Chrome DevTools</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Bug Reporting</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Playwright</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TypeScript</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">n8n</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Claude AI</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Mockoon</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">GitHub Actions</span>
                   </div>
-                  <a href="https://ptrcja.github.io/Trello-Testing-Project/" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                  <a href="https://github.com/ptrcja/chargeback-qa-suite" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
                     <Button size="sm" className="w-full">
-                      <Globe className="h-4 w-4 mr-2" aria-hidden="true" />
-                      View Live Project
+                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
+                      View Project
                     </Button>
                   </a>
                 </CardContent>
@@ -443,13 +434,13 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <TestTube className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Testing Skills</CardTitle>
+                    <CardTitle className="text-lg">Testing</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Manual (functional, regression, exploratory)</li>
-                      <li>UAT & Mobile (iOS/Android)</li>
-                      <li>API Testing, Security (XSS)</li>
+                      <li>Functional, Regression, Exploratory</li>
+                      <li>Compatibility, Integration, UAT</li>
+                      <li>Mobile (iOS), Defect Management</li>
                       <li>Test Case Design</li>
                     </ul>
                   </CardContent>
@@ -460,14 +451,13 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <Code className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Automation & Frameworks</CardTitle>
+                    <CardTitle className="text-lg">Automation & CI/CD</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Java, Selenium WebDriver</li>
-                      <li>TypeScript, Playwright  </li>
-                      <li>Cucumber BDD, Git / GitHub</li>
-                      <li></li>
+                      <li>Playwright, TypeScript</li>
+                      <li>Selenium, Cucumber BDD</li>
+                      <li>GitHub Actions, GitHub (PR Reviews)</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -477,13 +467,14 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <FileCheck className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Tools & Data</CardTitle>
+                    <CardTitle className="text-lg">API, Tools & Data</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>JIRA, TestLink, Postman</li>
-                      <li>Chrome DevTools, GitHub Actions</li>
-                      <li>MySQL, PostgreSQL, Azure Data Studio</li>
+                      <li>Postman, Bruno, REST API, Contract Testing</li>
+                      <li>Mockoon, Chrome DevTools, TestFlight</li>
+                      <li>JIRA, TestLink, Zendesk, Notion</li>
+                      <li>MySQL, PostgreSQL</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -492,14 +483,15 @@ export default function Portfolio() {
               <motion.div variants={fadeInUp}>
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
-                    <Globe className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">Languages & Other</CardTitle>
+                    <Sparkles className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
+                    <CardTitle className="text-lg">AI, Methods & Languages</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
+                      <li>n8n workflow automation</li>
+                      <li>Claude AI integration, AI-assisted test triage</li>
+                      <li>Agile/Scrum, SDLC, STLC, BDD, Shift-left</li>
                       <li>English (Business), Polish (Native)</li>
-                      <li>E-commerce & CRM Systems</li>
-                      <li>Cross-team Collaboration</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -526,6 +518,10 @@ export default function Portfolio() {
                     <div className="bg-white rounded-lg p-4">
                       <h4 className="font-semibold text-lg mb-2">Manual and Automation QA Testing Bootcamp at Coders Lab</h4>
                       <p className="text-muted-foreground text-sm">Completed January 2025</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-4">
+                      <h4 className="font-semibold text-lg mb-2">Certificate of Recognition - Women Coding Community</h4>
+                      <p className="text-muted-foreground text-sm">January 2026</p>
                     </div>
                   </div>
                 </CardContent>
@@ -629,7 +625,7 @@ export default function Portfolio() {
         <div className="container mx-auto">
           <div className="text-center">
             <p className="text-sm">
-              © 2025 Patrycja Zofia Gontarek. Built with Next.js, TypeScript, and Tailwind CSS.
+              © 2026 Patrycja Zofia Gontarek. Built with Next.js, TypeScript, and Tailwind CSS.
             </p>
             <p className="text-xs mt-2 opacity-75">
               ISTQB Foundation Level Certified QA Engineer
