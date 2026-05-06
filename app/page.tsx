@@ -154,8 +154,8 @@ export default function Portfolio() {
                
               </p>
               <p className="text-lg leading-relaxed">
-              This portfolio is a space where I share my projects, learning progress, and the skills I’m building along the way.
-              Right now, I’m diving into test automation with Playwright and TypeScript, and enjoying every step of the journey! 
+              This portfolio is a space where I share my projects, learning progress, and the skills I’m building along the way.{' '}
+              <span className="whitespace-nowrap">Right now, I’m diving into test automation with Playwright and TypeScript, and enjoying every step of the journey!</span>
               </p>
             </motion.div>
 
@@ -302,6 +302,43 @@ export default function Portfolio() {
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-3">
+                    <Sparkles className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
+                    <CardTitle className="text-xl">Chargeback QA Suite</CardTitle>
+                  </div>
+                  <CardDescription>
+                    AI-assisted QA framework for compliance-critical payment chargeback workflows with auto-triaged failures
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex flex-col flex-grow">
+                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                    <li>• 13 API tests across 3 browsers running on GitHub Actions</li>
+                    <li>• On failure, n8n webhook triggers Claude AI to analyze the issue</li>
+                    <li>• Auto-creates structured GitHub Issues with root cause and suggested fix</li>
+                    <li>• Mockoon mock server simulating a real payment provider</li>
+                    <li>• Compliance-focused chargeback flow coverage</li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Playwright</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TypeScript</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">n8n</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Claude AI</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Mockoon</span>
+                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">GitHub Actions</span>
+                  </div>
+                  <a href="https://github.com/ptrcja/chargeback-qa-suite" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                    <Button size="sm" className="w-full">
+                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
+                      View Project
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div variants={fadeInUp}>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
+                <CardHeader>
+                  <div className="flex items-center gap-3 mb-3">
                     <Coffee className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
                     <CardTitle className="text-xl">Coffee E-commerce Flaky Test Detector</CardTitle>
                   </div>
@@ -368,43 +405,6 @@ export default function Portfolio() {
               </Card>
             </motion.div>
 
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300 group flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Sparkles className="h-8 w-8 text-primary group-hover:scale-110 transition-transform duration-300" aria-hidden="true" />
-                    <CardTitle className="text-xl">Chargeback QA Suite</CardTitle>
-                  </div>
-                  <CardDescription>
-                    AI-assisted QA framework for compliance-critical payment chargeback workflows with auto-triaged failures
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-col flex-grow">
-                  <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                    <li>• 13 API tests across 3 browsers running on GitHub Actions</li>
-                    <li>• On failure, n8n webhook triggers Claude AI to analyze the issue</li>
-                    <li>• Auto-creates structured GitHub Issues with root cause and suggested fix</li>
-                    <li>• Mockoon mock server simulating a real payment provider</li>
-                    <li>• Compliance-focused chargeback flow coverage</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Playwright</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">TypeScript</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">n8n</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Claude AI</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">Mockoon</span>
-                    <span className="px-3 py-1 bg-gradient-to-r from-lavender-light to-lavender-dark text-xs rounded-full font-medium">GitHub Actions</span>
-                  </div>
-                  <a href="https://github.com/ptrcja/chargeback-qa-suite" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
-                    <Button size="sm" className="w-full">
-                      <Github className="h-4 w-4 mr-2" aria-hidden="true" />
-                      View Project
-                    </Button>
-                  </a>
-                </CardContent>
-              </Card>
-            </motion.div>
-
           </motion.div>
         </div>
       </section>
@@ -429,7 +429,7 @@ export default function Portfolio() {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <motion.div variants={fadeInUp}>
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
@@ -440,7 +440,8 @@ export default function Portfolio() {
                     <ul className="space-y-2 text-sm">
                       <li>Functional, Regression, Exploratory</li>
                       <li>Compatibility, Integration, UAT</li>
-                      <li>Mobile (iOS), Defect Management</li>
+                      <li>Mobile (iOS)</li>
+                      <li>Defect Management</li>
                       <li>Test Case Design</li>
                     </ul>
                   </CardContent>
@@ -457,7 +458,8 @@ export default function Portfolio() {
                     <ul className="space-y-2 text-sm">
                       <li>Playwright, TypeScript</li>
                       <li>Selenium, Cucumber BDD</li>
-                      <li>GitHub Actions, GitHub (PR Reviews)</li>
+                      <li>GitHub Actions</li>
+                      <li>GitHub (Source Control, PR Reviews)</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -467,14 +469,14 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <FileCheck className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">API, Tools & Data</CardTitle>
+                    <CardTitle className="text-lg">API & Tooling</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
-                      <li>Postman, Bruno, REST API, Contract Testing</li>
-                      <li>Mockoon, Chrome DevTools, TestFlight</li>
-                      <li>JIRA, TestLink, Zendesk, Notion</li>
-                      <li>MySQL, PostgreSQL</li>
+                      <li>Postman, Bruno</li>
+                      <li>REST API Testing, Contract Testing</li>
+                      <li>Mockoon, Chrome DevTools</li>
+                      <li>VS Code, TestFlight</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -484,14 +486,46 @@ export default function Portfolio() {
                 <Card className="h-full flex flex-col">
                   <CardHeader className="text-center">
                     <Sparkles className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
-                    <CardTitle className="text-lg">AI, Methods & Languages</CardTitle>
+                    <CardTitle className="text-lg">AI & Automation</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2 text-sm">
                       <li>n8n workflow automation</li>
-                      <li>Claude AI integration, AI-assisted test triage</li>
-                      <li>Agile/Scrum, SDLC, STLC, BDD, Shift-left</li>
-                      <li>English (Business), Polish (Native)</li>
+                      <li>Claude AI integration</li>
+                      <li>AI-assisted test triage</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={fadeInUp}>
+                <Card className="h-full flex flex-col">
+                  <CardHeader className="text-center">
+                    <Database className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
+                    <CardTitle className="text-lg">Project Tools & Databases</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <ul className="space-y-2 text-sm">
+                      <li>JIRA, TestLink</li>
+                      <li>Zendesk, Notion</li>
+                      <li>MySQL, PostgreSQL</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+
+              <motion.div variants={fadeInUp}>
+                <Card className="h-full flex flex-col">
+                  <CardHeader className="text-center">
+                    <Globe className="h-12 w-12 text-primary mx-auto mb-3" aria-hidden="true" />
+                    <CardTitle className="text-lg">Methods & Languages</CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <ul className="space-y-2 text-sm">
+                      <li>Agile/Scrum, SDLC, STLC</li>
+                      <li>BDD, Shift-left testing</li>
+                      <li>English (Business)</li>
+                      <li>Polish (Native)</li>
                     </ul>
                   </CardContent>
                 </Card>
