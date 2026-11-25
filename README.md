@@ -6,10 +6,10 @@ Welcome! This is my portfolio site where I share my QA skills, automation projec
 
 Here you’ll find:
 - My ISTQB Foundation Level Certification
-- Automation testing with Selenium, Java, and Cucumber BDD
-- Manual testing across different industries
-- Experience in e-commerce and QA
-- Real-world projects and frameworks
+- API and UI test automation with Playwright and TypeScript
+- Open-source QA work at Women Coding Community, with a case study (`/case-studies/wcc-qa/`)
+- Earlier automation with Selenium, Java, and Cucumber BDD
+- Manual testing and an e-commerce background
 
 ## Features
 
@@ -50,12 +50,11 @@ Here you’ll find:
 
 ## Sections
 
-1. Hero: Intro & contact
-2. About: Summary & strengths
-3. Experience: Work history
-4. Projects: Automation & testing
-5. Skills: Tech & certifications
-6. Contact: How to reach me
+1. Hero: Name and role
+2. About: Short introduction
+3. Featured Work: WCC case study (`/case-studies/wcc-qa/`), then projects
+4. Experience: Concise role summaries
+5. Contact: How to reach me
 
 ## Getting Started
 
