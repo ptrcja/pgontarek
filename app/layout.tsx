@@ -8,10 +8,13 @@ const inter = Inter({
     variable: '--font-inter'
 })
 
+const SITE_DESCRIPTION = 'ISTQB Foundation Level certified QA Engineer working with Playwright and TypeScript: REST API test automation, test-data factories, Zod schema validation, and GitHub Actions CI.'
+
 export const metadata: Metadata = {
+    metadataBase: new URL('https://pgontarek.com'),
     title: 'Patrycja Zofia Gontarek - QA Engineer Portfolio',
-    description: 'ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience. Specializing in Selenium WebDriver, Java, API testing, and quality assurance.',
-    keywords: 'QA Engineer, Quality Assurance, Test Automation, Selenium WebDriver, Manual Testing, ISTQB Certified, Java, API Testing, Netherlands',
+    description: SITE_DESCRIPTION,
+    keywords: 'QA Engineer, Quality Assurance, Test Automation, Playwright, TypeScript, API Testing, REST API, GitHub Actions, ISTQB Certified, Netherlands',
     authors: [{ name: 'Patrycja Zofia Gontarek' }],
     creator: 'Patrycja Zofia Gontarek',
     publisher: 'Patrycja Zofia Gontarek',
@@ -19,15 +22,15 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://ptrcja.github.io/pgontarek/',
+        url: '/',
         title: 'Patrycja Zofia Gontarek - QA Engineer Portfolio',
-        description: 'ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.',
-        siteName: 'Show case of my work in Manual and Automation Testing'
+        description: SITE_DESCRIPTION,
+        siteName: 'Patrycja Gontarek, QA Engineer'
     },
     twitter: {
-        card: 'summary_large_image',
+        card: 'summary',
         title: 'Patrycja Zofia Gontarek - QA Engineer Portfolio',
-        description: 'ISTQB Foundation Level certified QA professional with hands-on automation and manual testing experience.'
+        description: SITE_DESCRIPTION
     }
 }
 
